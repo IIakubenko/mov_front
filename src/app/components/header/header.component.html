@@ -1,7 +1,27 @@
 <div class="container">
-  <mat-tab-group class="header_tabs__container" animationDuration="0ms">
-    <mat-tab label="First"></mat-tab>
-    <mat-tab label="Second"></mat-tab>
-    <mat-tab label="Third"></mat-tab>
-  </mat-tab-group>
+  <div class="logo">
+    <img class="logo-img" src="assets/icons/logo.svg">
+  </div>
+  <div class="navigation">
+    <div class="navigation-tab">
+      <mat-icon class="icon-header" [svgIcon]="'home'"></mat-icon>
+    </div>
+    <div class="navigation-tab">
+      <mat-icon class="icon-header" [svgIcon]="'movie'"></mat-icon>
+    </div>
+    <div class="navigation-tab">
+      <mat-icon class="icon-header" [svgIcon]="'tv'"></mat-icon>
+    </div>
+    <div class="navigation-tab">
+      <mat-icon class="icon-header" [svgIcon]="'star'"></mat-icon>
+    </div>
+  </div>
+  <div class="settings-container">
+    <div class="settings-item">
+      <mat-icon class="icon-header" [svgIcon]="'account'"></mat-icon>
+    </div>
+    <div class="settings-item">
+      <mat-icon class="icon-header" [svgIcon]="'settings'"></mat-icon>
+    </div>
+  </div>
 </div>
