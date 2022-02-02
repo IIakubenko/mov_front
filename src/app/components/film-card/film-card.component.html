@@ -1,0 +1,12 @@
+<div class="card_container">
+  <div class="card_description">
+    <p class="card_genre">{{ film?.genre }}</p>
+    <div class="card_rate">
+      <mat-icon class="card_icon-star" [svgIcon]="'star'"></mat-icon>
+      <mat-icon class="card_icon-star" [svgIcon]="'star'"></mat-icon>
+      <mat-icon class="card_icon-star" [svgIcon]="'star'"></mat-icon>
+    </div>
+    <p class="card_title">{{ film?.title }}</p>
+  </div>
+  <img class="card_img" src="{{ film?.img }}" alt="{{ film?.title }}">
+</div>

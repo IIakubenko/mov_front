@@ -1,0 +1,30 @@
+<div class="slider_container">
+  <div class="slider_content">
+    <h4 class="slider_genre">
+      Science Fiction
+    </h4>
+    <div class="slider_rate">
+      <mat-icon class="icon-rate" [svgIcon]="'star'"></mat-icon>
+      <mat-icon class="icon-rate" [svgIcon]="'star'"></mat-icon>
+      <mat-icon class="icon-rate" [svgIcon]="'star'"></mat-icon>
+    </div>
+    <h1 class="slider_title">Star Wars</h1>
+    <div class="slider_description">
+      In a time when monsters walk the Earth, humanity’s fight for its future sets Godzilla and Kong on a collision
+      course that will see the two most powerful forces of nature on the planet collide in a spectacular battle for
+      the ages.
+    </div>
+    <div class="btn_watch">
+      <app-button class="btn_watch__item">Watch now</app-button>
+    </div>
+  </div>
+  <ng-image-slider
+    class="slider"
+    [images]="imageObject"
+    [infinite]="false"
+    [autoSlide]="1"
+    [imageSize]="{width: '100%', height: '85%'}"
+    slideImage="1">
+  </ng-image-slider>
+
+</div>

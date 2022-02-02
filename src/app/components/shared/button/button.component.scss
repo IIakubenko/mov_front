@@ -1,0 +1,21 @@
+.btn-main {
+  width: 288px;
+  height: 56px;
+  left: 16px;
+  top: 232px;
+  background: unset;
+  box-shadow: 016px 16px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 40px;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  border: 2px solid #3edbff;
+  border-right-color: #a449d3;
+  border-bottom-color: #a449d3;
+}
+
+.btn-main:hover{
+  background: rgba(44, 44, 44, 0.3);
+}

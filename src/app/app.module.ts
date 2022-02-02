@@ -9,12 +9,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs'
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
+import { FilmCardComponent } from './components/film-card/film-card.component';
+import { SliderComponent } from './components/slider/slider.component';
+import { NgImageSliderModule } from "ng-image-slider";
+import { ButtonComponent } from './components/shared/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    FilmCardComponent,
+    SliderComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +29,8 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatTabsModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

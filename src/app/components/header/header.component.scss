@@ -28,6 +28,7 @@
   justify-content: space-around;
 }
 
+
 .settings-container {
   display: flex;
   align-items: center;
@@ -51,5 +52,8 @@
 
   .mat-tab-header {
     height: 61px;
+  }
+  .icon-header:hover{
+    fill: red!important;
   }
 }
