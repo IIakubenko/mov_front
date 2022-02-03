@@ -1,17 +1,32 @@
-.release_title{
-  color: white;
-  margin: 24px 52px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
+.release {
+  &_title {
+    color: white;
+    margin: 24px 10px 24px 52px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &_heading {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  &_container {
+    margin-bottom: 125px;
+  }
+  &_icon{
+    width:14px;
+    height: 14px;
+  }
 }
 
-.release_container{
-  margin-bottom: 125px;
-}
-.films_wrapper{
+.films_wrapper {
   display: flex;
 }
-.film_item{
+
+.film_item {
   margin-right: 16px;
 }

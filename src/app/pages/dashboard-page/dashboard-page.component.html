@@ -1,9 +1,12 @@
 <app-header></app-header>
 <app-slider></app-slider>
 <div class="release_container">
-  <h3 class="release_title">
-    New releases
-  </h3>
+  <div class="release_heading">
+    <h3 class="release_title">
+      New releases
+    </h3>
+    <mat-icon class="release_icon" svgIcon="arrow-right"></mat-icon>
+  </div>
   <div class="films_wrapper">
     <app-film-card class="film_item" [film]="film" *ngFor="let film of filmList"></app-film-card>
   </div>
