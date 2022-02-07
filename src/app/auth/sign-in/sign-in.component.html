@@ -1,0 +1,18 @@
+<div class="sign-in_container">
+  <h3 class="sign-in_title">Sign In</h3>
+  <form [formGroup]="signInForm" class="sign-in_form">
+    <mat-form-field class="sign-in_input" appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input formControlName="email" matInput placeholder="pat@example.com">
+    </mat-form-field>
+    <mat-form-field  class="sign-in_input" appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input formControlName="password" matInput [type]="hide ? 'password' : 'text'">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <app-button (click)="signIn()" class="sign-in_btn">Sign In</app-button>
+  </form>
+</div>

@@ -1,10 +1,10 @@
 <div class="container">
   <div class="logo">
-    <img class="logo-img" src="assets/icons/logo.svg">
+    <img class="logo-img" [routerLink]="'/'" src="assets/icons/logo.svg">
   </div>
   <div class="navigation">
     <div class="navigation-tab">
-      <mat-icon class="icon-header" [svgIcon]="'home'"></mat-icon>
+      <mat-icon class="icon-header" [routerLink]="'/'" [svgIcon]="'home'"></mat-icon>
     </div>
     <div class="navigation-tab">
       <mat-icon class="icon-header" [svgIcon]="'movie'"></mat-icon>
@@ -18,7 +18,7 @@
   </div>
   <div class="settings-container">
     <div class="settings-item">
-      <mat-icon class="icon-header" [svgIcon]="'account'"></mat-icon>
+      <mat-icon class="icon-header" [routerLink]="'/sign-in'" [svgIcon]="'account'"></mat-icon>
     </div>
     <div class="settings-item">
       <mat-icon class="icon-header" [svgIcon]="'settings'"></mat-icon>
